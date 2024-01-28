@@ -32,9 +32,9 @@ print(extractor(text, return_dict=True))
 # [{'start': 37, 'end': 44, 'text': 'aspirin', 'label': 'DRUG'}, {'start': 55, 'end': 61, 'text': '3 days', 'label': 'DURATION'}]
 ```
 
-2. Using [`medalpaca`](https://huggingface.co/medalpaca/medalpaca-7b] extractor):
+2. Using [`medalpaca`](https://huggingface.co/medalpaca/medalpaca-7b) LLM:
 
-It requires labels desciprtions:
+It requires labels descriptions:
 
 ```python
 
@@ -57,6 +57,13 @@ annotations = extractor(text)
 print(annotations)
 
 ```
+
+Optionally, it's possible to pass `prompt_template` to `MedAlpacaExtractor`.
+```python
+prompt_template = "Extract entities of type {} from the following text:"
+extractor = MedAlpacaExtractor(labels=labels, labels_description=labels_descriptions, prompt_template=prompt_template)
+```
+
 
 3. Using `flair` (TARS extractor):
 
