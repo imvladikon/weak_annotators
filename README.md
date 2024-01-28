@@ -1,10 +1,15 @@
 
-## Weak Annotators (NER)
+## Weak Annotators (NER)[WIP]
 
 Experiments with weak annotators for NER using different models and methods including LLMs.
+Requires some GPU memory :) (for 7B models ~ 8-12GB). 
 
 ### Installation
 
+```bash
+pip install weak-annotators
+```
+or from source:
 ```bash
 pip install git+https://github.com/imvladikon/weak_annotators.git
 ```
