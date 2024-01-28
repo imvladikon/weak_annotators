@@ -1,0 +1,12 @@
+tokenizers
+accelerate
+datasets
+spacy
+spacy-transformers
+spacy-experimental
+transformers
+sentence-transformers
+vllm
+pytextspan
+flair
+jinja2
