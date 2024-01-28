@@ -6,7 +6,7 @@ Experiments with weak annotators for NER using different models and methods incl
 ### Installation
 
 ```bash
-pip install git+https://github.com/imvladikon/weak-annotators.git
+pip install git+https://github.com/imvladikon/weak_annotators.git
 ```
 
 ### Usage
